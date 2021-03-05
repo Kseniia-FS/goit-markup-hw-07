@@ -1,0 +1,131 @@
+//  * FOOTER
+
+.footer {
+  background-color: $bgc-footer;
+}
+
+.page-footer {
+  display: flex;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo__footer {
+  color: $white-color;
+}
+
+.page-footer__logo {
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+}
+
+.addres__text {
+  color: $white-color;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  font-style: normal;
+  letter-spacing: 0.03em;
+  margin-bottom: 9px;
+}
+
+.address__link {
+  color: $clients-color;
+  font-style: normal;
+  margin-bottom: 9px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+  transition: color $animation-time $animation-dir;
+
+  &:hover,
+  :focus {
+    color: $accent-color;
+  }
+}
+
+.page-footer__socials {
+  display: inline-block;
+  padding-top: 12px;
+  margin-left: 70px;
+}
+
+.socials__title {
+  display: inline-flex;
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $white-color;
+}
+
+.page-footer .socials__item:last-child {
+  margin-right: 0;
+}
+
+.page-footer {
+  .socials__item {
+    margin-right: 10px;
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color $animation-time $animation-dir;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .socials__link {
+    color: $white-color;
+  }
+
+  .socials__icon {
+    fill: currentColor;
+  }
+}
+
+.page-footer .socials__item:hover,
+.page-footer .socials__item:focus {
+  background-color: $accent-color;
+}
+
+.subscribe {
+  display: inline-block;
+  padding-top: 12px;
+  margin-left: 93px;
+}
+
+.subscribe__wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.subscribe__input {
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+  background-color: var(--bgc-hero-footer);
+  filter: drop-shadow(rgba(0, 0, 0, 0.15) 0px 4px 4px);
+  padding: 15px 0px 15px 16px;
+  border-width: 1px;
+  border-style: solid;
+  border-color: rgba(255, 255, 255, 0.3);
+
+  border-radius: 4px;
+}
+
+.subscribe__btn::after {
+  content: '';
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+  background-image: url(../images/icon-send.svg);
+}

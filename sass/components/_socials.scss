@@ -1,0 +1,36 @@
+.socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials__link {
+  color: $clients-color;
+
+  transition: color $animation-time $animation-dir;
+}
+
+.socials__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: $white-color;
+  transition: background-color $animation-time $animation-dir;
+}
+
+.socials__item:hover,
+.socials__item:focus {
+  background-color: $accent-color;
+
+  .socials__link {
+    color: $white-color;
+  }
+}
+
+.socials__icon {
+  fill: currentColor;
+  transition: fill $animation-time $animation-dir;
+}
