@@ -15,10 +15,10 @@
 
 .about__item {
   position: relative;
-}
 
-.about__item:not(:last-child):not(:last-child) {
-  margin-right: 30px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .about__text {

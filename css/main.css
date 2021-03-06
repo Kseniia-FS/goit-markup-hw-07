@@ -1,4 +1,17 @@
 @charset "UTF-8";
+.logo {
+  color: #000000;
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+}
+
+.logo__web {
+  color: #2196f3;
+}
+
 .socials {
   display: flex;
   justify-content: space-between;
@@ -90,19 +103,6 @@ a {
   border-bottom: 1px solid #ececec;
 }
 
-.logo {
-  color: #000000;
-  font-family: Raleway;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.192;
-  letter-spacing: 0.03em;
-}
-
-.logo__web {
-  color: #2196f3;
-}
-
 .menu,
 .nav {
   display: flex;
@@ -120,6 +120,10 @@ a {
   padding: 32px 0;
 }
 
+.menu__item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .menu__link {
   position: relative;
   color: #212121;
@@ -133,10 +137,6 @@ a {
 .menu__link:hover,
 .menu__link :focus {
   color: #2196f3;
-}
-
-.menu__item:not(:last-child) {
-  margin-right: 50px;
 }
 
 .nav__item {
@@ -294,7 +294,7 @@ a {
   position: relative;
 }
 
-.about__item:not(:last-child):not(:last-child) {
+.about__item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -405,6 +405,16 @@ a {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.clients__item:hover,
+.clients__item :focus {
+  border-color: #2196f3;
+}
+
+.clients__item:hover .clients__link,
+.clients__item :focus .clients__link {
+  color: #2196f3;
+}
+
 .clients__link {
   color: #afb1b8;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -413,16 +423,6 @@ a {
 .clients-img {
   fill: currentColor;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients__item:hover,
-.clients__item:focus {
-  border-color: #2196f3;
-}
-
-.clients__item:hover .clients__link,
-.clients__item:focus .clients__link {
-  color: #2196f3;
 }
 
 .footer {
@@ -603,18 +603,18 @@ a {
   height: 30px;
 }
 
+.modal__btn:hover,
+.modal__btn :focus,
+.modal__btn :active {
+  color: #2196f3;
+}
+
 .modal__btn-close {
   position: absolute;
   top: 0;
   right: 0;
   transform: translate(-5px, 5px);
   fill: currentColor;
-}
-
-.modal__btn:hover,
-.modal__btn:focus,
-.modal__btn:active {
-  color: #2196f3;
 }
 
 .form {
@@ -679,7 +679,7 @@ a {
   box-sizing: border-box;
   border-radius: 4px;
   margin-bottom: 10px;
-  padding-left: 20px;
+  padding: 12px 16px;
   outline: none;
 }
 
@@ -689,7 +689,6 @@ a {
   line-height: 1.167;
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
-  padding: 12px 16px;
 }
 
 .policy {
@@ -785,14 +784,14 @@ a {
   margin-top: 30px;
 }
 
-.gallery__overlay {
-  overflow: hidden;
-}
-
 .gallery__item:hover {
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery__overlay {
+  overflow: hidden;
 }
 
 .gallery__item:hover .gallery__overlay--wrap,

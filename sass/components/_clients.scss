@@ -28,6 +28,15 @@
   cursor: pointer;
 
   transition: border-color $animation-time $animation-dir;
+
+  &:hover,
+  :focus {
+    border-color: $accent-color;
+
+    .clients__link {
+      color: $accent-color;
+    }
+  }
 }
 
 .clients__link {
@@ -38,13 +47,4 @@
 .clients-img {
   fill: currentColor;
   transition: fill $animation-time $animation-dir;
-}
-
-.clients__item:hover,
-.clients__item:focus {
-  border-color: $accent-color;
-
-  .clients__link {
-    color: $accent-color;
-  }
 }
