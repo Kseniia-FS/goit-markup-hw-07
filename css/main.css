@@ -620,6 +620,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
+  height: 100%;
 }
 
 .form__title {
@@ -725,7 +726,7 @@ a {
 }
 
 .policy__input:checked + .policy__label::before {
-  background-image: url(images/icon-checked.svg);
+  background-image: url(../images/icon-checked.svg);
   background-color: #2196f3;
   outline: none;
   border: none;
