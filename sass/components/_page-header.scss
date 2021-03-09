@@ -55,10 +55,11 @@ a {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  padding: 24px 15px;
 }
 
 .menu,
-.nav {
+.contacts {
   display: flex;
 }
 
@@ -66,13 +67,11 @@ a {
   margin-left: 93px;
 }
 
-.nav {
+.contacts {
   margin-left: auto;
 }
 
 .menu__item {
-  padding: 32px 0;
-
   &:not(:last-child) {
     margin-right: 50px;
   }
@@ -80,6 +79,7 @@ a {
 
 .menu__link {
   position: relative;
+  display: inline-block;
   color: $text-color-primary;
   font-weight: 500;
   font-size: 14px;
@@ -93,7 +93,7 @@ a {
   }
 }
 
-.nav__item {
+.contacts__item {
   align-items: center;
 
   &:not(:last-child) {
@@ -101,7 +101,7 @@ a {
   }
 }
 
-.nav__link {
+.contacts__link {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -116,7 +116,7 @@ a {
   }
 }
 
-.nav__icon {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }

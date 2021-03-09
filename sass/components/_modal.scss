@@ -58,6 +58,8 @@
   width: 30px;
   height: 30px;
 
+  transition: color $animation-time $animation-dir;
+
   &:hover,
   :focus,
   :active {
@@ -71,6 +73,7 @@
   right: 0;
   transform: translate(-5px, 5px);
   fill: currentColor;
+  transition: fill $animation-time $animation-dir;
 }
 
 .form {
@@ -111,6 +114,8 @@
   margin-bottom: 10px;
   padding-left: 40px;
   outline: none;
+
+  transition: border $animation-time $animation-dir;
 }
 
 .form__input:focus,
@@ -128,6 +133,8 @@
   top: 50%;
   transform: translateY(-30%);
   fill: currentColor;
+
+  transition: fill $animation-time $animation-dir;
 }
 
 .form__textarea {
@@ -139,6 +146,8 @@
   margin-bottom: 10px;
   padding: 12px 16px;
   outline: none;
+  transition: border $animation-time $animation-dir;
+  resize: none;
 
   &::placeholder {
     font-weight: 400;

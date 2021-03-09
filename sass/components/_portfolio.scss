@@ -1,16 +1,21 @@
-.btn {
+.gallery {
   padding-top: 94px;
-  margin-bottom: 34px;
+  padding-bottom: 94px;
 }
 
 .btn__list {
   display: flex;
   justify-content: center;
+  margin-bottom: 34px;
 }
 
-.btn__item {
-  padding: 6px 22px;
+.btn__item:not(:first-child) {
   margin-left: 8px;
+}
+
+.btn__text {
+  padding: 6px 22px;
+
   color: $text-color-primary;
   background-color: $bgc-secondary;
   font-weight: 700;
@@ -32,13 +37,10 @@
   }
 }
 
-.gallery {
-  margin-bottom: 94px;
-}
-
 .gallery__list {
   display: flex;
   flex-wrap: wrap;
+
   margin-left: calc(-1 * 30px);
   margin-top: calc(-1 * 30px);
 }
