@@ -725,7 +725,7 @@ a {
 }
 
 .policy__input:checked + .policy__label::before {
-  background-image: url(../../images/icon-checked.svg);
+  background-image: url(images/icon-checked.svg);
   background-color: #2196f3;
   outline: none;
   border: none;
