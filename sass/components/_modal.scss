@@ -192,7 +192,7 @@
 }
 
 .policy__input:checked + .policy__label::before {
-  background-image: url(../../images/icon-check.svg);
+  background-image: url(../../images/icon-checked.svg);
   background-color: $accent-color;
   outline: none;
   border: none;
